@@ -1,0 +1,31 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container">
+    <div class="row">
+        <!-- Add Recipe Form -->
+        <div class="col-sm-6 mt-5">
+            <h2 class="alert alert-success text-center">Update Recipe</h2>
+            <form method="post" action="/category/update/<%= data._id %>">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" name="title" id="title" value="<%= data.title %>" required>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label> <br>
+                    <input type="file" name="image" id="image">
+                    <p>Current Image: <%= data.image %></p> <!-- Display current image -->
+                </div>
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <input type="number" class="form-control" name="rating" id="rating" min="1" max="5" value="<%= data.rating %>" required>
+                </div>
+                <button type="submit" class="btn btn-warning">Update</button>
+                <a href="/category" class="btn btn-secondary">Back to Home</a> <!-- Changed to anchor tag for navigation -->
+            </form>
+            
+        </div>
+        
+    </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>

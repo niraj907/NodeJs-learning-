@@ -1,0 +1,11 @@
+
+const express = require('express'); // importing module express
+const app = express();// creating express of application
+const PORT = process.env.PORT || 4000;
+app.get('/', (req, res) => { 
+  res.send('<h1>Hello World!</h1>')
+})
+
+app.listen(PORT, () => {
+    console.log(`App listening running at http://localhost:${PORT}`)
+})

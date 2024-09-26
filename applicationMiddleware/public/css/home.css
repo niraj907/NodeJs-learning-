@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+p{
+    color: rgb(2, 2, 2);
+    font-size: 1.2rem;
+
+}
+
+
+body{
+    background-color: #fdd867;
+}
+
+
+a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+}

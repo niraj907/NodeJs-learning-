@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+p{
+    color: rgb(154, 153, 153);
+}
+
+
+body{
+    background-color: #feca57;
+}
+
+#btn{
+    font-size: 1.5rem;
+    background-color: white;
+    padding: auto 2rem;
+    border: none;
+}
